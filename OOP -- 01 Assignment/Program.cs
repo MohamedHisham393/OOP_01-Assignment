@@ -21,6 +21,19 @@
 
             //---------------------------------------------------------------------------------------------------
 
+            //Part 02 : Practical
+
+            DeliveryAddress D01 = new DeliveryAddress("Maadi", "Maged", 44);
+            Console.WriteLine(D01.GetFullAddress());
+
+            DeliveryAddress D02 = D01;
+            Console.WriteLine(D02.GetFullAddress());
+
+            D02.City = "Nasr City";
+            D02.Street = "Abbas";
+            Console.WriteLine(D02.GetFullAddress());
+
+
 
         }
     }
