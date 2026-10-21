@@ -24,14 +24,18 @@
             //Part 02 : Practical
 
             DeliveryAddress D01 = new DeliveryAddress("Maadi", "Maged", 44);
-            Console.WriteLine(D01.GetFullAddress());
+            //Console.WriteLine(D01.GetFullAddress());
 
-            DeliveryAddress D02 = D01;
-            Console.WriteLine(D02.GetFullAddress());
+            //DeliveryAddress D02 = D01;
+            //Console.WriteLine(D02.GetFullAddress());
 
-            D02.City = "Nasr City";
-            D02.Street = "Abbas";
-            Console.WriteLine(D02.GetFullAddress());
+            //D02.City = "Nasr City";
+            //D02.Street = "Abbas";
+            //Console.WriteLine(D02.GetFullAddress());
+
+            Shipment sh01 = new Shipment("est77", "laptop", 50.5, 95, D01);
+
+            sh01.PrintShipment();
 
 
 
